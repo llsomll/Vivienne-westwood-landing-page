@@ -3,6 +3,11 @@ body {
     padding: 0;
 }
 
+.search {
+    border-radius: 0;
+    font-size: 0.8em;
+}
+
 .btn-outline-dark {
     font-size: 0.8em;
     border-radius: 0;
@@ -45,7 +50,7 @@ body {
 
 .lines {
     position: absolute;
-    top: 50%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -54,7 +59,7 @@ body {
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 3%;
 }
@@ -107,7 +112,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .title {
         font-size: 1.5em; 
     }
@@ -115,9 +120,7 @@ body {
         font-size: 0.7em;
     }
     .lines {
-        padding: 5px; 
-        top: 30%;
-        left: 50%;
+        display: none;
     }
 
     .logo img {
@@ -128,18 +131,104 @@ body {
 
 
 
-@media (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .title {
-        font-size: 4em; 
+        font-size: 2.5em; 
     }
     .lines {
         padding: 5px; 
-        top:70%;
+        top: 37%;
         left: 50%;
     }
 
     .logo img {
-        top: 15%;
+        top: 10%;
         left: 40%;
     }
+}
+
+
+.sunglasses {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.sunimg {
+    max-width: 100%;
+    padding: 0; 
+}
+
+.suntext {
+    background-color: #443580;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.suntext1 {
+    font-size: 3em;
+    margin-bottom: 2em;
+}
+
+
+.suntext a {
+    text-decoration: none;
+    color: white;
+}
+
+
+footer {
+    border-top: 1px solid lightgrey;
+    font-size: 14px;
+  }
+  .first-line {
+    color: black;
+    border-bottom: 1px solid lightgrey;
+  }
+  .second-line a {
+    color: black;
+    text-decoration: none;
+  }
+  .flag {
+    color: black;
+  }
+
+  .mobile-footer {
+    border-top: 1px solid lightgrey;
+    color: black;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    display: none;
+  }
+
+
+  @media screen and (max-width: 48rem) {
+  .second-line {
+    padding: 0 2rem;
+  }
+
+  .flag {
+    display: none;
+  }
+
+  .first-line {
+    text-align: center;
+  }
+
+  .mobile-footer {
+    display: block;
+  }
+}
+.col {
+  padding-bottom: 1rem;
+}
+.flag-img {
+  margin: 0 0.5rem;
 }
